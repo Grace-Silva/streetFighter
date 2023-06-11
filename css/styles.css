@@ -354,3 +354,20 @@ footer .social-media a i:hover{
         order: 1;
     }
 }
+
+@media(max-width: 320px){
+
+    section{
+        padding: 1.1rem;
+        margin-top: 160px;
+    }
+
+    .hero .hero-image img{
+        width: 260px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+}
