@@ -88,7 +88,7 @@ header .download i{
     margin-left: 8px;
 }
 
-header .wrapMenu{
+.wrapMenu{
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
@@ -100,7 +100,7 @@ header .wrapMenu{
     transition: .2s ease-in-out;
     display: none;
 }
-header .wrapMenu:hover{
+.wrapMenu:hover{
     background: #ff7700;
 }
 
@@ -246,7 +246,7 @@ footer .social-media a i:hover{
 
 */
 
-@media(max-width:1200px){
+@media(max-width: 1200px){
     .inner-width{
         padding: 2rem;
     }
@@ -296,5 +296,61 @@ footer .social-media a i:hover{
 
     .hero-image{
         order: -1;
+    }
+}
+
+@media(max-width: 600px){
+
+    .inner-width{
+        padding: 1rem;
+    }
+
+    footer .author{
+        font-size: 1rem;
+    }
+
+    footer .social-media{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 480px){
+
+    .wrapMenu{
+        display: block;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        z-index: 10001;
+    }
+
+    header{
+        background: rgb(222,70,38);
+        background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%);
+        transition: all .3s ease-in-out;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    #check:checked ~ header{
+        left: 0;
+    }
+
+    header .navlinks{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-content: center;
+    }
+
+    footer .author{
+        order: 1;
     }
 }
