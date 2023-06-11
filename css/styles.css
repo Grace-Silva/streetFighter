@@ -53,7 +53,7 @@ header .navlinks li a, .download{
     transition: .2s ease-in-out;
 }
 header .navlinks li a:hover{
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid #FBF0CB;
 }
 
 header .download{
@@ -86,6 +86,26 @@ header .download:hover{
 
 header .download i{
     margin-left: 8px;
+}
+
+header .wrapMenu{
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #FBF0CB;
+    padding: 8px;
+    border-radius: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(251, 240, 203, 0.2);
+    transition: .2s ease-in-out;
+    display: none;
+}
+header .wrapMenu:hover{
+    background: #ff7700;
+}
+
+#check{
+    display: none;
 }
 
 /* sección principal */
@@ -261,4 +281,8 @@ footer .social-media a i:hover{
     .hero .hero-image img{
         width: 400px;
     }
+}
+
+@media(max-width: 768px){
+    
 }
