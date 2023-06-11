@@ -123,7 +123,7 @@ section{
 .hero-text .btn{
     margin-bottom: 0;
     display: inline-flex;
-    border: solid 1px #ff7700;
+    border: solid 1px #FBF0CB;
     border-radius: 25px;
     align-items: center;
     gap: 8px;
@@ -156,5 +156,51 @@ section{
 }
 
 .hero .hero-image{
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 10px 0px rgba(0, 0, 0, 0.2));
+    animation: slide .5s ease-in-out;
+}
+/*
+@keyframes slide{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(222,70,38);
+    background: radial-gradient(circle, rgba(222,70,38,.5) 0%, rgba(42,19,16,.5) 100%); 
+}
+
+footer .capLogo{
+    width: 100px;
+}
+
+footer .capLogo img{
+    width: 100%;
+}
+
+footer .author{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+footer .social-media a i{
+    display: inline-block;
+    color: #FBF0CB;
+    padding: 6px;
+    margin-right: 6px;
+    border: none;
+    border-radius: 100%;
+    background: transparent;
+    transition: .2s ease-in-out;
+}
+footer .social-media a i:hover{
+    transform: scale(1.1);
+    background: #ff7700;
 }

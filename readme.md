@@ -1,6 +1,6 @@
 # Repositorio Street Fighter
 
-Este repositorio consta de un sitio web para el videojuegos Street Fighter.
+Este repositorio consta de un sitio web para el videojuego Street Fighter.
 Su objetivo es ser un sitio web multipágina que brinde información acerca del juegos, productos, personajes y permita jugar un demo del mismo. Tendrá diseño responsive para los usuarios de dispositivos más pequeños.
 
 # Tecnologías
@@ -10,5 +10,6 @@ Su objetivo es ser un sitio web multipágina que brinde información acerca del 
     Emulador de GameBoy Advance Online
 
 # Estado: En desarrollo
+Enlace: https://grace-silva.github.io/streetFighter/
 
 Autor: Grace Silva
