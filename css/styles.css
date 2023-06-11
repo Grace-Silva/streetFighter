@@ -16,14 +16,15 @@
 body{
     background: rgb(253,208,10);
     background: radial-gradient(circle, rgba(253,208,10,1) 0%, rgba(241,126,19,1) 25%, rgba(241,126,19,1) 75%, rgba(253,208,10,1) 100%); 
-    min-height: 100vh;
     color: #FBF0CB;
+    border: solid blue;
 }
 /* header section*/
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: solid;
 }
 
 header .logo{
@@ -90,6 +91,7 @@ header .download i{
 /* sección principal */
 section{
     padding: 5rem;
+    border: solid red;
 }
 
 .hero{
@@ -147,7 +149,7 @@ section{
 
 .hero-text .platforms i{
     font-size: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 2rem;
     cursor: pointer;
 }
 
@@ -170,11 +172,12 @@ section{
 }*/
 
 footer{
+    border: solid green;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgb(222,70,38);
-    background: radial-gradient(circle, rgba(222,70,38,.5) 0%, rgba(42,19,16,.5) 100%); 
+    background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%); 
 }
 
 footer .capLogo{
@@ -203,4 +206,59 @@ footer .social-media a i{
 footer .social-media a i:hover{
     transform: scale(1.1);
     background: #ff7700;
+}
+
+/* mediaquerys: 
+ /* Extra small devices (phones, 600px and down) 
+ @media only screen and (max-width: 600px) {...}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) 
+ @media only screen and (min-width: 600px) {...}
+ 
+ /* Medium devices (landscape tablets, 768px and up) 
+ @media only screen and (min-width: 768px) {...}
+ 
+ /* Large devices (laptops/desktops, 992px and up) 
+ @media only screen and (min-width: 992px) {...}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) 
+ @media only screen and (min-width: 1200px) {...} 
+
+*/
+
+@media(max-width:1200px){
+    .inner-width{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 3rem;
+    }
+
+    .hero{
+        align-items: space-between;
+    }
+}
+
+@media(max-width: 998px){
+
+    header .logo{
+        width: 160px;
+    }
+
+    .hero .hero-text h2{
+        font-size: 1.7rem;
+    }
+
+    .hero .hero-text p{
+        font-size: 1.1rem;
+    }
+
+    .hero .btn{
+        font-size: 1rem;
+    }
+
+    .hero .hero-image img{
+        width: 400px;
+    }
 }
