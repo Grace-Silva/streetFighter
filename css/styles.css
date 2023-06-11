@@ -284,5 +284,17 @@ footer .social-media a i:hover{
 }
 
 @media(max-width: 768px){
-    
+
+    header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero{
+        flex-wrap: wrap;
+    }
+
+    .hero-image{
+        order: -1;
+    }
 }
