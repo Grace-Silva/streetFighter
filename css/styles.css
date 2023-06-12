@@ -17,6 +17,7 @@ body{
     background: rgb(253,208,10);
     background: radial-gradient(circle, rgba(253,208,10,1) 0%, rgba(241,126,19,1) 25%, rgba(241,126,19,1) 75%, rgba(253,208,10,1) 100%); 
     color: #FBF0CB;
+    overflow: hidden;
 }
 /* header section*/
 header{
