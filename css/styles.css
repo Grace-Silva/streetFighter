@@ -17,7 +17,6 @@ body{
     background: rgb(253,208,10);
     background: radial-gradient(circle, rgba(253,208,10,1) 0%, rgba(241,126,19,1) 25%, rgba(241,126,19,1) 75%, rgba(253,208,10,1) 100%); 
     color: #FBF0CB;
-    overflow: hidden;
 }
 /* header section*/
 header{
@@ -117,6 +116,8 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    height: 100vh;
+
 }
 
 .hero .platforms i{
@@ -250,7 +251,7 @@ footer .social-media a i:hover{
     }
 
     section{
-        padding: 3rem;
+        padding: 1rem 3rem;
     }
 
     .hero{
