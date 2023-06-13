@@ -260,6 +260,9 @@ footer .social-media a i:hover{
 }
 
 @media(max-width: 998px){
+    header.inner-width{
+        padding: 3rem;
+    }
 
     header .logo{
         width: 160px;
@@ -286,7 +289,7 @@ footer .social-media a i:hover{
 
     header{
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .hero{
@@ -301,7 +304,18 @@ footer .social-media a i:hover{
 @media(max-width: 600px){
 
     .inner-width{
-        padding: 1rem;
+        padding: 2rem;
+    }
+    
+    footer{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-content: center;
+    }
+
+    footer .author{
+        order: 1;
     }
 
     footer .author{
@@ -344,17 +358,6 @@ footer .social-media a i:hover{
     }
     section{
         margin-top: 180px;
-    }
-
-    footer{
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 8px;
-        align-content: center;
-    }
-
-    footer .author{
-        order: 1;
     }
 }
 
