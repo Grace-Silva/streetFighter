@@ -116,10 +116,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-
+    position: relative;
 }
 
 .hero .platforms i{
@@ -199,6 +196,7 @@ footer{
     background: rgb(222,70,38);
     background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%); 
     text-align: center;
+    position: relative;
 }
 
 footer .capLogo{
