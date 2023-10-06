@@ -1,15 +1,19 @@
-# Repositorio Street Fighter
+# Street Fighter II : The World Warrior
 
-Este repositorio consta de un sitio web para el videojuego Street Fighter.
-Su objetivo es ser un sitio web multipágina que brinde información acerca del juegos, productos, personajes y permita jugar un demo del mismo. Tendrá diseño responsive para los usuarios de dispositivos más pequeños.
+Desarrollado por **[Capcom](https://www.capcom.com/)** y lanzado originalmente para arcade en 1991, es la segunda entrega de la saga pero la primera en alcanzar la fama mundial y sentar marcar precendentes en el génera lucha de los videojuegos.
+
+Este repositorio consta de un sitio web para el videojuego Street Fighter II : The World Warrior.
+Su objetivo es brindar información acerca sus diferentes versiones(los ports se omiten), personajes y que permita jugar un demo del mismo. Tendrá un **Diseño Responsive** para los usuarios de dispositivos más pequeños.
 
 # Tecnologías
     HTML5
     CSS3
-    JS
+    JavaScript
     Emulador de GameBoy Advance Online
+    PhotoShop
 
 # Estado: En desarrollo
-Enlace: https://grace-silva.github.io/streetFighter/
 
-Autor: Grace Silva
+Ver Ahora[![Hadoken Ryu](./img/hadoken.png)](https://grace-silva.github.io/streetFighter/)
+
+Autor: [Grace Silva](https://github.com/Grace-Silva)
