@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
 
+:root{
+    --white: #FBF0CB;
+    --orange: #f17e13;
+    --hoverOrange: #de4626;
+    --yellow: #fdd00a;
+    --coffee: #2a1310;
+    --transition: all ease .5s;
+    --buttonPadding: 12px 16px;
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -7,6 +18,11 @@
     font-family: 'Wix Madefor Display', sans-serif;
     text-decoration: none;
     list-style: none;
+    outline: none;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 .inner-width{
@@ -14,12 +30,13 @@
 }
 
 body{
-    background: rgb(253,208,10);
-    background: radial-gradient(circle, rgba(253,208,10,1) 0%, rgba(241,126,19,1) 25%, rgba(241,126,19,1) 75%, rgba(253,208,10,1) 100%); 
-    color: #FBF0CB;
+    background: rgb(241,126,19);
+    background: radial-gradient(circle, rgba(241,126,19,1) 50%, rgba(253,208,10,1) 100%); 
+    color: var(--white);
 }
-/* header section*/
+/** starts header section **/
 header{
+    border: solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,33 +48,37 @@ header .logo{
 
 header .logo img{
     width: 100%;
-    transition: .2s ease-in-out;
+    transition: var(--transition);
 }
 
 header .logo img:hover{
     filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.1));
+    -webkit-filter:  drop-shadow(4px 10px rgba(0, 0, 0, 0.1));
 }
 
 header .navlinks{
     display: flex;
-    gap: 2rem;
+    gap: 4em;
 }
 
-header .navlinks li a, .download{
-    color: #FBF0CB;
+header .navlinks li a, .button{
+    color: var(--white);
     font-weight: 600;
-    font-size: 1.1rem;
-    border-bottom: 2px solid transparent;
-    transition: .2s ease-in-out;
+    font-size: 1.1em;
+    transition: var(--transition);
 }
 header .navlinks li a:hover{
-    border-bottom: 2px solid #FBF0CB;
+    font-size: 1.3em;
 }
 
-header .download{
+header .navlinks:hover > :not(:hover){
+    opacity: .5;
+}
+
+.button{
     display: inline-block;
     border: none;
-    padding: 12px 16px;
+    padding: var(--buttonPadding);
     border-radius: 25px;
     background: rgba(251, 240, 203, 0.2);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -78,19 +99,21 @@ header .download{
     }
 }
 
-header .download:hover{
+.button:hover{
     animation-play-state: paused;
+    background: var(--hoverOrange);
 }
 
-header .download i{
+header .playNow i{
     margin-left: 8px;
 }
 
+/* shrink menu */
 label .wrapMenu{
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
-    border: 1px solid #FBF0CB;
+    border: 1px solid var(--white);
     padding: 8px;
     border-radius: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -105,17 +128,19 @@ label .wrapMenu:hover{
 #check{
     display: none;
 }
+/** ends header section **/
+/*---------------------------------------------*/
 
-/* sección principal */
-section{
-    padding: 5rem;
-}
+
+/** starts main/hero section **/
 
 .hero{
+    padding: 4em;
     display: flex;
-    justify-content: center;
+    border: solid blue;
+    justify-content: space-between;
+    gap: 4em;
     align-items: center;
-    gap: 3rem;
     position: relative;
 }
 
@@ -124,9 +149,8 @@ section{
 }
 
 .hero-text h2{
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 600;
-    font-style: italic;
     margin-bottom: 16px;
 
 }
