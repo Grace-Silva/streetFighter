@@ -354,11 +354,17 @@ footer .social-media a i:hover{
 
     footer .author{
         order: 2;
+        font-size: 1.3em;
     }
 
 }
 
+/* mobile */
 @media(max-width: 576px){
+
+    .inner-width{
+        padding: 2em;
+    }
 
     label .wrapMenu{
         display: block;
@@ -376,15 +382,15 @@ footer .social-media a i:hover{
         background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%);
         transition: var(--transition);
         position: fixed;
-        width: auto;
+        width: 50vw;
         height: 100vh;
         top: 0;
-        left: -100%;
+        right: -100%;
         z-index: 1000;
     }
 
     #check:checked ~ header{
-        left: 0;
+        right: 0;
     }
 
     header .navlinks{
@@ -392,24 +398,21 @@ footer .social-media a i:hover{
         align-items: center;
     }
 
+    .hero{
+        margin-top: 4em;
+    }
+
     footer{
         justify-content: space-evenly;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 1em;
         align-content: center;
     }
 
     footer .author{
-        order: 1;
+        font-size: 1.1em;
     }
 
-    footer .author{
-        font-size: 1rem;
-    }
-
-    footer .social-media{
-        align-content: center;
-    }
 }
 
 @media(max-width: 480px){
