@@ -40,6 +40,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 header .logo{
@@ -113,7 +114,7 @@ header .playNow i{
 
 /* shrink menu */
 label .wrapMenu{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-weight: 600;
     cursor: pointer;
     border: 1px solid var(--white);
@@ -123,10 +124,12 @@ label .wrapMenu{
     background: rgba(251, 240, 203, 0.2);
     transition: var(--transition);
     display: none;
+    z-index: 10000;
 }
-label .wrapMenu:hover{
+label .wrapMenu:hover, label .wrapMenu:active{
     background: var(--hoverOrange);
 }
+
 
 #check{
     display: none;
@@ -355,12 +358,40 @@ footer .social-media a i:hover{
 
 }
 
-@media(max-width: 600px){
+@media(max-width: 576px){
 
-    .inner-width{
-        padding: 2rem;
+    label .wrapMenu{
+        display: block;
+        position: absolute;
+        top: 2em;
+        right: 2em;
     }
-    
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        gap: 4em;
+        align-items: center;
+        background: rgb(222,70,38);
+        background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%);
+        transition: var(--transition);
+        position: fixed;
+        width: auto;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        z-index: 1000;
+    }
+
+    #check:checked ~ header{
+        left: 0;
+    }
+
+    header .navlinks{
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer{
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -380,6 +411,7 @@ footer .social-media a i:hover{
         align-content: center;
     }
 }
+
 @media(max-width: 480px){
 
     label .wrapMenu{
