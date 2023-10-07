@@ -199,6 +199,11 @@ label .wrapMenu:hover{
     }
 }
 
+/** ends main/hero section **/
+/*---------------------------------------*/
+
+
+/** starts footer **/
 footer{
     display: flex;
     justify-content: space-between;
@@ -233,7 +238,6 @@ footer .social-media{
 }
 
 footer .social-media a i{
-    font-size: 1.2em;
     padding: 10px;
     border: none;
     border-radius: 100%;
@@ -244,6 +248,8 @@ footer .social-media a i:hover{
     transform: scale(1.1);
     background: var(--hoverOrange);
 }
+/** ends footer **/
+/*----------------------------------*/
 
 /* mediaquerys: 
  /* Extra small devices (phones, 600px and down) 
@@ -264,15 +270,13 @@ footer .social-media a i:hover{
 */
 
 @media(max-width: 1200px){
-    .inner-width{
-        padding: 2rem;
-    }
 
-    section{
-        padding: 1rem 3rem;
+    .inner-width{
+        padding: 2em;
     }
 
     .hero{
+        padding: 3em;
         align-items: space-between;
     }
 }
