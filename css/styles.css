@@ -141,12 +141,14 @@ label .wrapMenu:hover, label .wrapMenu:active{
 /** starts main/hero section **/
 
 .hero{
+    border: solid red;
     padding: 4em;
     display: flex;
     justify-content: space-between;
     gap: 4em;
     align-items: center;
-    position: relative;
+    min-height: 100vh;
+    height: 100%;
 }
 
 .hero .platforms i{
@@ -260,23 +262,8 @@ footer .social-media a i:hover{
 /** ends footer **/
 /*----------------------------------*/
 
-/* mediaquerys: 
- /* Extra small devices (phones, 600px and down) 
- @media only screen and (max-width: 600px) {...}
-
- /* Small devices (portrait tablets and large phones, 600px and up) 
- @media only screen and (min-width: 600px) {...}
- 
- /* Medium devices (landscape tablets, 768px and up) 
- @media only screen and (min-width: 768px) {...}
- 
- /* Large devices (laptops/desktops, 992px and up) 
- @media only screen and (min-width: 992px) {...}
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) 
- @media only screen and (min-width: 1200px) {...} 
-
-*/
+/*---------------------------------*/
+/** devices **/
 
 /* laptop*/
 @media(max-width: 1200px){
@@ -289,7 +276,6 @@ footer .social-media a i:hover{
         padding: 3em;
         align-items: space-between;
     }
-
 }
 
 /* small laptop */
@@ -356,7 +342,6 @@ footer .social-media a i:hover{
         order: 2;
         font-size: 1.3em;
     }
-
 }
 
 /* mobile */
@@ -382,7 +367,7 @@ footer .social-media a i:hover{
         background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%);
         transition: var(--transition);
         position: fixed;
-        width: 50vw;
+        width: 60vw;
         height: 100vh;
         top: 0;
         right: -100%;
@@ -412,57 +397,68 @@ footer .social-media a i:hover{
     footer .author{
         font-size: 1.1em;
     }
-
 }
 
+/* small phones*/
 @media(max-width: 480px){
 
-    label .wrapMenu{
-        display: block;
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        z-index: 10001;
-    }
-
-    header{
-        background: rgb(222,70,38);
-        background: radial-gradient(circle, rgba(222,70,38,1) 0%, rgba(42,19,16,1) 100%);
-        transition: all .3s ease-in-out;
-        position: fixed;
-        width: 100%;
-        height: auto;
-        top: 0;
-        left: -100%;
-        z-index: 1000;
-    }
-
-    #check:checked ~ header{
-        left: 0;
-    }
-
-    header .navlinks{
-        flex-direction: column;
-        align-items: center;
-    }
-    section{
-        margin-top: 180px;
+    .hero .hero-image img{
+        width: 320px;
     }
 }
 
+/* ultra small phones*/
 @media(max-width: 320px){
 
-    section{
-        padding: 1.1rem;
-        margin-top: 160px;
+    header{
+        width: 80vw;
+        justify-content: center;
+        gap: 3em;
     }
 
+    .hero{
+        padding: 2em;
+        margin-top: 8em;
+    }
+
+    .hero .hero-text h2, .hero .hero-text p{
+        margin-bottom: 24px;
+    }
+
+
     .hero .hero-image img{
-        width: 260px;
+        width: 230px;
     }
 
     footer{
         flex-direction: column;
     }
 
+
+    .hero .hero-text h2{
+        font-size: 1.5em;
+    }
+
+    .hero .hero-text p{
+        font-size: 1em;
+        text-align: left;
+    }
+
+    .hero .hero-text .btn{
+        padding: 12px 24px;
+    }
+
+
+    .hero .hero-text .btn:first-of-type{
+        margin-right: 0;
+    }
+
+    footer .author{
+        font-size: 1em;
+    }
+
+    footer .social-media a i{
+        padding: 8px;
+        font-size: 1em;
+    }
 }
