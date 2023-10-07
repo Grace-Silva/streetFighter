@@ -269,6 +269,7 @@ footer .social-media a i:hover{
 
 */
 
+/* laptop*/
 @media(max-width: 1200px){
 
     .inner-width{
@@ -281,9 +282,15 @@ footer .social-media a i:hover{
     }
 }
 
+/* small laptop */
 @media(max-width: 998px){
-    header.inner-width{
-        padding: 3rem;
+
+    .inner-width{
+        padding: 2em 3em;
+    }
+
+    header .navlinks{
+        gap: 2em;
     }
 
     header .logo{
@@ -291,22 +298,19 @@ footer .social-media a i:hover{
     }
 
     .hero .hero-text h2{
-        font-size: 1.7rem;
+        font-size: 1.5em;
     }
 
     .hero .hero-text p{
-        font-size: 1.1rem;
-    }
-
-    .hero .btn{
-        font-size: 1rem;
+        font-size: 1.1em;
     }
 
     .hero .hero-image img{
-        width: 400px;
+        width: 360px;
     }
 }
 
+/* ipad/tablets */
 @media(max-width: 768px){
 
     header{
