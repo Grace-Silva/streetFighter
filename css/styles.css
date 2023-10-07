@@ -176,9 +176,15 @@ label .wrapMenu:hover{
     margin-right: 1.5em;
 }
 
+.hero-text .platforms{
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .hero-text .platforms i{
     font-size: 1.5em;
-    margin-right: 2em;
     color: var(--coffee);
     filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.2));
     -webkit-filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.2));
@@ -246,7 +252,7 @@ footer .social-media a i{
 }
 footer .social-media a i:hover{
     transform: scale(1.1);
-    background: var(--hoverOrange);
+    background: var(--coffee);
 }
 /** ends footer **/
 /*----------------------------------*/
@@ -280,6 +286,7 @@ footer .social-media a i:hover{
         padding: 3em;
         align-items: space-between;
     }
+
 }
 
 /* small laptop */
@@ -313,18 +320,39 @@ footer .social-media a i:hover{
 /* ipad/tablets */
 @media(max-width: 768px){
 
-    header{
-        flex-direction: column;
-        gap: 3rem;
+    header .button{
+        display: none;
     }
 
     .hero{
         flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .hero-image{
         order: -1;
     }
+
+    .hero-text .platforms{
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        gap: 1em 3em;
+    }
+
+    footer .author{
+        order: 2;
+    }
+
 }
 
 @media(max-width: 600px){
