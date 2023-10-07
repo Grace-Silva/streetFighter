@@ -210,30 +210,39 @@ footer{
 
 footer .capLogo{
     width: 100px;
+    transition: var(--transition);
+}
+footer .capLogo:hover{
+    filter: drop-shadow(4px 10px rgba(0, 0, 0, 0.1));
+    -webkit-filter:  drop-shadow(4px 10px rgba(0, 0, 0, 0.1));
 }
 
 footer .capLogo img{
     width: 100%;
 }
 
-footer .author{
-    font-weight: 500;
-    font-size: 1.2rem;
+footer .author, .social-media a i{
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--white);
+}
+
+footer .social-media{
+    display: flex;
+    gap: 12px;
 }
 
 footer .social-media a i{
-    display: inline-block;
-    color: #FBF0CB;
-    padding: 6px;
-    margin-right: 6px;
+    font-size: 1.2em;
+    padding: 10px;
     border: none;
     border-radius: 100%;
     background: transparent;
-    transition: .2s ease-in-out;
+    transition: var(--transition);
 }
 footer .social-media a i:hover{
     transform: scale(1.1);
-    background: #ff7700;
+    background: var(--hoverOrange);
 }
 
 /* mediaquerys: 
