@@ -226,7 +226,6 @@ label .wrapMenu:active {
 .fighters{
   text-align: center;
   padding: 4em 6em;
-  border: solid blue;
 }
 
 .slider{
@@ -234,7 +233,6 @@ label .wrapMenu:active {
   width: 100%;
   position: relative;
   z-index: 999;
-  border: solid red;
 }
 
 .slider .arrow{
