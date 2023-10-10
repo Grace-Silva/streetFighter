@@ -344,10 +344,9 @@ label .wrapMenu:active {
 
 .gamesContainer{
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 4) - 15px);
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  row-gap: 1em;
+  gap: 3em;
 }
 
 .game{
@@ -371,7 +370,7 @@ label .wrapMenu:active {
 
 .game .gameTitle{
   border: solid transparent;
-  padding: 0 .6em;
+  padding: 0 1em;
   font-weight: 500;
   font-style: italic;
   font-size: 1em;
