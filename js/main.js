@@ -6,13 +6,30 @@ const rightButton = document.getElementById("rightButton");
 const leftButton = document.getElementById("leftButton");
 
 // botón izquierdo
-leftButton.onclick = function(){
-    let card = document.querySelector(".carrousel").offsetWidth;
-    carrousel.scrollLeft -= card;
+leftButton.onclick = function () {
+  let card = document.querySelector(".carrousel").offsetWidth;
+  carrousel.scrollLeft -= card;
+};
+
+// botón derecho:
+rightButton.onclick = function () {
+  let card = document.querySelector(".carrousel").offsetWidth;
+  carrousel.scrollLeft += card;
+};
+
+/** función para el botón ir arriba **/
+let goUp = document.querySelector(".goUp");
+goUp.addEventListener("click", () => {
+  window.scrollTo(0, 0);
+});
+
+/* aparecer y desaparecer botón */
+window.onscroll = () => {
+  if (window.scrollY <= 120) {
+    goUp.style.visibility = "hidden";
+    goUp.style.opacity = "0";
+  } else {
+    goUp.style.visibility = "visible";
+    goUp.style.opacity = "1";
   }
-  
-  // botón derecho:
-  rightButton.onclick = function(){
-    let card = document.querySelector(".carrousel").offsetWidth;
-    carrousel.scrollLeft += card;
-  }
+};

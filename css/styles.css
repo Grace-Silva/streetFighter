@@ -453,6 +453,32 @@ footer .social-media a i:hover {
 /** ends footer **/
 /*----------------------------------*/
 
+/** goUp Button **/
+.goUp {
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+  width: 3.2em;
+  height: 3.2em;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  background: var(--coffee);
+  color: var(--white);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  z-index: 9999;
+}
+.goUp i {
+  font-size: 1.2em;
+}
+.goUp:hover, .goUp:active {
+  background: var(--red);
+}
+
+
+
 /*---------------------------------*/
 /** devices **/
 
@@ -662,6 +688,11 @@ footer .social-media a i:hover {
 
   .hero .hero-image img {
     width: 230px;
+  }
+
+  .slider .arrow{
+    width: 42px;
+    height: 42px;
   }
 
   footer {
