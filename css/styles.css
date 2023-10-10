@@ -166,7 +166,7 @@ label .wrapMenu:active {
   text-shadow: 1px 1px 3px var(--coffee);
   font-size: 2em;
   /*font-weight: 600;*/
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 
 .hero-text p {
@@ -354,8 +354,8 @@ label .wrapMenu:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: .6em;
-  padding: 0 0 2em 0;
+  gap: .3em;
+  padding: 0 0 1em 0;
   border: none;
   border-radius: var(--borderRadius);
   overflow: hidden;
@@ -499,6 +499,13 @@ footer .social-media a i:hover {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 
+  .gamesContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 2em;
+  }
+
 }
 
 /* ipad/tablets */
@@ -597,6 +604,13 @@ footer .social-media a i:hover {
     width: 380px;
   }
 
+  .gamesContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 1.5em;
+  }
+
   footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -617,6 +631,10 @@ footer .social-media a i:hover {
 
   .fighter .fighterImage{
     width: 300px;
+  }
+
+  .game .gameDate, .game .price{
+    display: none;
   }
 
 }
@@ -667,6 +685,11 @@ footer .social-media a i:hover {
   .fighter .fighterImage{
     width: 260px;
   }
+
+  .gamesContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
 
   footer .author {
     font-size: 1em;
