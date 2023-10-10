@@ -290,6 +290,7 @@ label .wrapMenu:active {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  user-select: none;
 }
 .fighter:hover, .fighter:active{
   filter: grayscale(0%);
@@ -361,6 +362,7 @@ label .wrapMenu:active {
   overflow: hidden;
   background: var(--white);
   color: var(--coffee);
+  user-select: none;
 }
 
 .game .gameImage{
