@@ -223,7 +223,7 @@ label .wrapMenu:active {
 
 /*-----------------------------*/
 /* starts fighters section */
-.fighters{
+.fighters, .gamesSection{
   text-align: center;
   padding: 4em 6em;
 }
@@ -331,6 +331,71 @@ label .wrapMenu:active {
   font-size: 1.2em;
   margin: 0 .5em;
 }
+/** ends fighter section**/
+
+/*-------------------------------*/
+/** starts games Section **/
+
+.gamesSection .button{
+  padding: 8px 12px;
+  animation: none;
+  background: var(--red);
+}
+
+.gamesContainer{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 15px);
+  justify-content: space-between;
+  row-gap: 1em;
+}
+
+.game{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: .6em;
+  padding: 0 0 2em 0;
+  border: none;
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  background: var(--white);
+  color: var(--coffee);
+}
+
+.game .gameImage{
+  width: 100%;
+  box-shadow: -2px 0 10px rgba(42, 19, 16, 0.45);
+}
+
+.game .gameTitle{
+  border: solid transparent;
+  padding: 0 .6em;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.game .gameDate{
+  font-weight: 500;
+  font-size: .8em;
+  opacity: .8;
+}
+.game .gameDate i{
+  margin-right: 4px;
+}
+
+.game .price{
+  display: block;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--hoverOrange);
+}
+/** ends games section **/
+/*-------------------------------*/
+
+
 
 
 /** starts footer **/
