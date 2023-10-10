@@ -41,6 +41,7 @@ body {
     rgba(253, 208, 10, 1) 100%
   );
   color: var(--white);
+  overflow-x: hidden;
 }
 
 /** starts header section **/
