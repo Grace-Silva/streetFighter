@@ -43,6 +43,8 @@ body {
   color: var(--white);
   overflow-x: hidden;
   position: relative;
+  min-height: 100vh;
+  height: 100%;
 }
 
 /** starts header section **/
@@ -457,8 +459,8 @@ footer .social-media a i:hover {
 /** goUp Button **/
 .goUp {
   position: fixed;
-  right: 2em;
-  bottom: 2em;
+  right: 2%;
+  top: 90%;
   width: 3.2em;
   height: 3.2em;
   border: 1px solid var(--white);
@@ -468,8 +470,8 @@ footer .social-media a i:hover {
   cursor: pointer;
   transition: var(--transition);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-  visibility: hidden;
   z-index: 9999;
+  visibility: hidden;
 }
 .goUp i {
   font-size: 1.2em;
