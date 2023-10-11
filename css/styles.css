@@ -42,6 +42,7 @@ body {
   );
   color: var(--white);
   overflow-x: hidden;
+  position: relative;
 }
 
 /** starts header section **/
@@ -456,6 +457,7 @@ footer .social-media a i:hover {
 /** goUp Button **/
 .goUp {
   position: fixed;
+  display: block;
   right: 2em;
   bottom: 2em;
   width: 3.2em;
@@ -588,6 +590,7 @@ footer .social-media a i:hover {
   }
 
   header {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 4em;
@@ -599,16 +602,18 @@ footer .social-media a i:hover {
       rgba(42, 19, 16, 1) 100%
     );
     transition: var(--transition);
-    position: fixed;
-    width: 60vw;
+    position: absolute;
+    width: 100%;
     height: 100vh;
     top: 0;
     right: -100%;
     z-index: 1000;
+    visibility: hidden;
   }
 
   #check:checked ~ header {
     right: 0;
+    visibility: visible;
   }
 
   header .navlinks {
