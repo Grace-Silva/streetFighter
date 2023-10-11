@@ -50,7 +50,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 header .logo {
@@ -135,7 +135,7 @@ label .wrapMenu {
   background: rgba(251, 240, 203, 0.2);
   transition: var(--transition);
   display: none;
-  z-index: 10000;
+  z-index: 10001;
 }
 label .wrapMenu:hover,
 label .wrapMenu:active {
@@ -457,7 +457,6 @@ footer .social-media a i:hover {
 /** goUp Button **/
 .goUp {
   position: fixed;
-  display: block;
   right: 2em;
   bottom: 2em;
   width: 3.2em;
@@ -603,11 +602,10 @@ footer .social-media a i:hover {
     );
     transition: var(--transition);
     position: absolute;
-    width: 100%;
+    width: 50vw;
     height: 100vh;
     top: 0;
     right: -100%;
-    z-index: 1000;
     visibility: hidden;
   }
 
